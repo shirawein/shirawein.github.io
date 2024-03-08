@@ -1,95 +1,272 @@
-@article{manning2020human,
-  title={A human evaluation of AMR-to-English generation systems},
-  author={Manning, Emma and Wein, Shira and Schneider, Nathan},
-  journal={arXiv preprint arXiv:2004.06814},
-  year={2020}
+@inproceedings{wein-etal-2023-follow,
+    title = "Follow the leader(board) with confidence: Estimating p-values from a single test set with item and response variance",
+    author = "Wein, Shira  and
+      Homan, Christopher  and
+      Aroyo, Lora  and
+      Welty, Chris",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.196",
+    doi = "10.18653/v1/2023.findings-acl.196",
+    pages = "3138--3161",
+    abstract = "Among the problems with leaderboard culture in NLP has been the widespread lack of confidence estimation in reported results. In this work, we present a framework and simulator for estimating p-values for comparisons between the results of two systems, in order to understand the confidence that one is actually better (i.e. ranked higher) than the other. What has made this difficult in the past is that each system must itself be evaluated by comparison to a gold standard. We define a null hypothesis that each system{'}s metric scores are drawn from the same distribution, using variance found naturally (though rarely reported) in test set items and individual labels on an item (responses) to produce the metric distributions. We create a test set that evenly mixes the responses of the two systems under the assumption the null hypothesis is true. Exploring how to best estimate the true p-value from a single test set under different metrics, tests, and sampling methods, we find that the presence of response variance (from multiple raters or multiple model versions) has a profound impact on p-value estimates for model comparison, and that choice of metric and sampling method is critical to providing statistical guarantees on model comparisons.",
 }
 
-@inproceedings{wein2020classification,
-  title={Classification and analysis of neologisms produced by learners of Spanish: Effects of proficiency and task},
-  author={Wein, Shira},
-  booktitle={Proceedings of the The Fourth Widening Natural Language Processing Workshop},
-  pages={88--91},
-  year={2020}
+@inproceedings{wein-2023-human,
+    title = "Human Raters Cannot Distinguish {E}nglish Translations from Original {E}nglish Texts",
+    author = "Wein, Shira",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.754",
+    doi = "10.18653/v1/2023.emnlp-main.754",
+    pages = "12266--12272",
+    abstract = "The term translationese describes the set of linguistic features unique to translated texts, which appear regardless of translation quality. Though automatic classifiers designed to distinguish translated texts achieve high accuracy and prior work has identified common hallmarks of translationese, human accuracy of identifying translated text is understudied. In this work, we perform a human evaluation of English original/translated texts in order to explore raters{'} ability to classify texts as being original or translated English and the features that lead a rater to judge text as being translated. Ultimately, we find that, regardless of the annotators{'} native language or the source language of the text, annotators are unable to distinguish translations from original English texts and also have low agreement. Our results provide critical insight into work in translation studies and context for assessments of translationese classifiers.",
 }
 
-@inproceedings{gessler2020supersense,
-  title={Supersense and Sensibility: Proxy Tasks for Semantic Annotation of Prepositions},
-  author={Gessler, Luke and Wein, Shira and Schneider, Nathan},
-  booktitle={Proceedings of the 14th Linguistic Annotation Workshop},
-  year={2020}
+@inproceedings{wein-etal-2023-measuring,
+    title = "Measuring Fine-Grained Semantic Equivalence with {A}bstract {M}eaning {R}epresentation",
+    author = "Wein, Shira  and
+      Wang, Zhuxin  and
+      Schneider, Nathan",
+    editor = "Amblard, Maxime  and
+      Breitholtz, Ellen",
+    booktitle = "Proceedings of the 15th International Conference on Computational Semantics",
+    month = jun,
+    year = "2023",
+    address = "Nancy, France",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.iwcs-1.16",
+    pages = "144--154",
+    abstract = "Identifying semantically equivalent sentences is important for many NLP tasks. Current approaches to semantic equivalence take a loose, sentence-level approach to {``}equivalence,{''} despite evidence that fine-grained differences and implicit content have an effect on human understanding and system performance. In this work, we introduce a novel, more sensitive method of characterizing cross-lingual semantic equivalence that leverages Abstract Meaning Representation graph structures. We find that parsing sentences into AMRs and comparing the AMR graphs enables finer-grained equivalence measurement than comparing the sentences themselves. We demonstrate that when using gold or even automatically parsed AMR annotations, our solution is finer-grained than existing corpus filtering methods and more accurate at predicting strictly equivalent sentences than existing semantic similarity metrics.",
 }
 
-@inproceedings{kranzlein2020pastrie,
-  title={PASTRIE: A Corpus of Prepositions Annotated with Supsersense Tags in Reddit International English},
-  author={Kranzlein, Michael and Manning, Emma and Peng, Siyao and Wein, Shira and Arora, Aryaman and Schneider, Nathan},
-  booktitle={Proceedings of the 14th Linguistic Annotation Workshop},
-  year={2020}
+@inproceedings{opitz-etal-2023-amr4nli,
+    title = "{AMR}4{NLI}: Interpretable and robust {NLI} measures from semantic graphs",
+    author = "Opitz, Juri  and
+      Wein, Shira  and
+      Steen, Julius  and
+      Frank, Anette  and
+      Schneider, Nathan",
+    editor = "Amblard, Maxime  and
+      Breitholtz, Ellen",
+    booktitle = "Proceedings of the 15th International Conference on Computational Semantics",
+    month = jun,
+    year = "2023",
+    address = "Nancy, France",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.iwcs-1.29",
+    pages = "275--283",
+    abstract = "The task of natural language inference (NLI) asks whether a given premise (expressed in NL) entails a given NL hypothesis. NLI benchmarks contain human ratings of entailment, but the meaning relationships driving these ratings are not formalized. Can the underlying sentence pair relationships be made more explicit in an interpretable yet robust fashion? We compare semantic structures to represent premise and hypothesis, including sets of *contextualized embeddings* and *semantic graphs* (Abstract Meaning Representations), and measure whether the hypothesis is a semantic substructure of the premise, utilizing interpretable metrics. Our evaluation on three English benchmarks finds value in both contextualized embeddings and semantic graphs; moreover, they provide complementary signals, and can be leveraged together in a hybrid model.",
 }
 
-@article{gessler2021supersense,
-  title={Supersense and Sensibility: Proxy Tasks for Semantic Annotation of Prepositions},
-  author={Gessler, Luke and Wein, Shira and Schneider, Nathan},
-  journal={Proceedings of the Society for Computation in Linguistics},
-  volume={4},
-  number={1},
-  pages={464--466},
-  year={2021}
+@inproceedings{wein-bonn-2023-comparing,
+    title = "Comparing {UMR} and Cross-lingual Adaptations of {AMR}",
+    author = "Wein, Shira  and
+      Bonn, Julia",
+    editor = "Bonn, Julia  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the Fourth International Workshop on Designing Meaning Representations",
+    month = jun,
+    year = "2023",
+    address = "Nancy, France",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.dmr-1.3",
+    pages = "23--33",
+    abstract = "Abstract Meaning Representation (AMR) is a popular semantic annotation schema that presents sentence meaning as a graph while abstracting away from syntax. It was originally designed for English, but has since been extended to a variety of non-English versions of AMR. These cross-lingual adaptations, to varying degrees, incorporate language-specific features necessary to effectively capture the semantics of the language being annotated. Uniform Meaning Representation (UMR) on the other hand, the multilingual extension of AMR, was designed specifically for cross-lingual applications. In this work, we discuss these two approaches to extending AMR beyond English. We describe both approaches, compare the information they capture for a case language (Spanish), and outline implications for future work.",
 }
 
-@inproceedings{wein2021fully,
-  title={A fully automated approach to requirement extraction from design documents},
-  author={Wein, Shira and Briggs, Paul},
-  booktitle={2021 IEEE Aerospace Conference (50100)},
-  pages={1--7},
-  year={2021},
-  organization={IEEE}
+@inproceedings{bonn-etal-2023-umr,
+    title = "{UMR} Annotation of Multiword Expressions",
+    author = "Bonn, Julia  and
+      Cowell, Andrew  and
+      Haji{\v{c}}, Jan  and
+      Palmer, Alexis  and
+      Palmer, Martha  and
+      Pustejovsky, James  and
+      Sun, Haibo  and
+      Uresova, Zdenka  and
+      Wein, Shira  and
+      Xue, Nianwen  and
+      Zhao, Jin",
+    editor = "Bonn, Julia  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the Fourth International Workshop on Designing Meaning Representations",
+    month = jun,
+    year = "2023",
+    address = "Nancy, France",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.dmr-1.10",
+    pages = "99--109",
+    abstract = "Rooted in AMR, Uniform Meaning Representation (UMR) is a graph-based formalism with nodes as concepts and edges as relations between them. When used to represent natural language semantics, UMR maps words in a sentence to concepts in the UMR graph. Multiword expressions (MWEs) pose a particular challenge to UMR annotation because they deviate from the default one-to-one mapping between words and concepts. There are different types of MWEs which require different kinds of annotation that must be specified in guidelines. This paper discusses the specific treatment for each type of MWE in UMR.",
 }
 
-@inproceedings{wein2021classifying,
-  title={Classifying divergences in cross-lingual AMR pairs},
-  author={Wein, Shira and Schneider, Nathan},
-  booktitle={Proceedings of The Joint 15th Linguistic Annotation Workshop (LAW) and 3rd Designing Meaning Representations (DMR) Workshop},
-  pages={56--65},
-  year={2021}
+@misc{wein2024lost,
+      title={Lost in Translationese? Reducing Translation Effect Using Abstract Meaning Representation}, 
+      author={Shira Wein and Nathan Schneider},
+      year={2024},
+      eprint={2304.11501},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url="https://arxiv.org/abs/2304.11501"
 }
 
-@inproceedings{swackhamer2022belonging,
-  title={Belonging in Computing: The Contribution of Gender-based Community Building},
-  author={Swackhamer, Lyn E and Alladin, Terina-Jasmine and Memon, Hana and Ko, Amy J and Wein, Shira},
-  booktitle={Proceedings of the 53rd ACM Technical Symposium on Computer Science Education V. 2},
-  pages={1019--1020},
-  year={2022}
+@article{10.1162/coli_a_00503,
+    author = {Wein, Shira and Schneider, Nathan},
+    title = "{Assessing the Cross-linguistic Utility of Abstract Meaning Representation}",
+    journal = {Computational Linguistics},
+    pages = {1-55},
+    year = {2023},
+    month = {12},
+    abstract = "{Semantic representations capture the meaning of a text. Abstract Meaning Representation (AMR), a type of semantic representation, focuses on predicate-argument structure and abstracts away from surface form. Though AMR was developed initially for English, it has now been adapted to a multitude of languages in the form of non-English annotation schemas, cross-lingual text-to-AMR parsing, and AMR-to-(non-English) text generation. We advance prior work on cross-lingual AMR by thoroughly investigating the amount, types, and causes of differences which appear in AMRs of different languages. Further, we compare how AMR captures meaning in cross-lingual pairs versus strings, and show that AMR graphs are able to draw out fine-grained differences between parallel sentences. We explore three primary research questions: (1) What are the types and causes of differences in parallel AMRs? (2) How can we measure the amount of difference between AMR pairs in different languages? (3) Given that AMR structure is affected by language and exhibits cross-lingual differences, how do cross-lingual AMR pairs compare to string-based representations of cross-lingual sentence pairs? We find that the source language itself does have a measurable impact on AMR structure, and that translation divergences and annotator choices also lead to differences in cross-lingual AMR pairs. We explore the implications of this finding throughout our study, concluding that, while AMR is useful to capture meaning across languages, evaluations need to take into account source language influences if they are to paint an accurate picture of system output, and meaning generally.}",
+    issn = {0891-2017},
+    doi = {10.1162/coli_a_00503},
+    url = {https://doi.org/10.1162/coli\_a\_00503},
+    eprint = {https://direct.mit.edu/coli/article-pdf/doi/10.1162/coli\_a\_00503/2198446/coli\_a\_00503.pdf},
 }
 
-@article{wein2022spanish,
-  title={Spanish Abstract Meaning Representation: Annotation of a General Corpus},
-  author={Wein, Shira and Donatelli, Lucia and Ricker, Ethan and Engstrom, Calvin and Nelson, Alex and Schneider, Nathan},
-  journal={arXiv preprint arXiv:2204.07663},
-  year={2022}
+@article{homanmany,
+  title={How Many Raters Do You Need? Power Analysis for Foundation Models},
+  author={Homan, Christopher M and Wein, Shira and Aroyo, Lora M and Welty, Chris},
+  year={2023},
+  url="https://neurips.cc/virtual/2023/76515#details",
+  booktitle="Proceedings of I Can't Believe It's Not Better (ICBINB): Failure Modes in the Age of Foundation Models"
 }
 
-@inproceedings{wein2022effect,
-  title={Effect of source language on AMR structure},
-  author={Wein, Shira and Leung, Wai Ching and Mu, Yifu and Schneider, Nathan},
-  booktitle={Proceedings of the 16th Lingusitic Annotation Workshop (LAW-XVI) within LREC2022},
-  pages={97--102},
-  year={2022}
+@book{wein2023cs1,
+author = {Wein, Shira and Patterson, Alicia and Brick, Shannon and Luken, Sydney},
+year = {2022},
+month = {11},
+title = {A CS1 Open Data Analysis Project with Embedded Ethics},
+isbn = {9798400704680},
+doi = {10.1145/3631987},
+booktile="ACM EngageCSEdu",
+url="https://dl.acm.org/doi/pdf/10.1145/3631987"
 }
 
-@article{wein2022measuring,
-  title={Measuring Fine-Grained Semantic Equivalence with Abstract Meaning Representation},
-  author={Wein, Shira and Wang, Zhuxin and Schneider, Nathan},
-  journal={arXiv preprint arXiv:2210.03018},
-  year={2022}
+@inproceedings{wein-2022-spanish,
+    title = "{S}panish {A}bstract {M}eaning {R}epresentation: Annotation of a General Corpus",
+    author = "Wein, Shira  and
+      Donatelli, Lucia  and
+      Ricker, Ethan  and
+      Engstrom, Calvin  and
+      Nelson, Alex  and
+      Harter, Leonie  and
+      Schneider, Nathan",
+    editor = "Derczynski, Leon",
+    booktitle = "Northern European Journal of Language Technology, Volume 8",
+    year = "2022",
+    address = "Copenhagen, Denmark",
+    publisher = "Northern European Association of Language Technology",
+    url = "https://aclanthology.org/2022.nejlt-1.6",
+    doi = "https://doi.org/10.3384/nejlt.2000-1533.2022.4462",
+    abstract = "Abstract Meaning Representation (AMR), originally designed for English, has been adapted to a number of languages to facilitate cross-lingual semantic representation and analysis. We build on previous work and present the first sizable, general annotation project for Spanish AMR. We release a detailed set of annotation guidelines and a corpus of 486 gold-annotated sentences spanning multiple genres from an existing, cross-lingual AMR corpus. Our work constitutes the second largest non-English gold AMR corpus to date. Fine-tuning an AMR to-Spanish generation model with our annotations results in a BERTScore improvement of 8.8{\%}, demonstrating initial utility of our work.",
 }
 
-@inproceedings{wein2022accounting,
-  title={Accounting for language effect in the evaluation of cross-lingual AMR parsers},
-  author={Wein, Shira and Schneider, Nathan},
-  booktitle={Proceedings of the 29th International Conference on Computational Linguistics},
-  pages={3824--3834},
-  year={2022}
+@inproceedings{wein-schneider-2022-accounting,
+    title = "Accounting for Language Effect in the Evaluation of Cross-lingual {AMR} Parsers",
+    author = "Wein, Shira  and
+      Schneider, Nathan",
+    editor = "Calzolari, Nicoletta  and
+      Huang, Chu-Ren  and
+      Kim, Hansaem  and
+      Pustejovsky, James  and
+      Wanner, Leo  and
+      Choi, Key-Sun  and
+      Ryu, Pum-Mo  and
+      Chen, Hsin-Hsi  and
+      Donatelli, Lucia  and
+      Ji, Heng  and
+      Kurohashi, Sadao  and
+      Paggio, Patrizia  and
+      Xue, Nianwen  and
+      Kim, Seokhwan  and
+      Hahm, Younggyun  and
+      He, Zhong  and
+      Lee, Tony Kyungil  and
+      Santus, Enrico  and
+      Bond, Francis  and
+      Na, Seung-Hoon",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.336",
+    pages = "3824--3834",
+    abstract = "Cross-lingual Abstract Meaning Representation (AMR) parsers are currently evaluated in comparison to gold English AMRs, despite parsing a language other than English, due to the lack of multilingual AMR evaluation metrics. This evaluation practice is problematic because of the established effect of source language on AMR structure. In this work, we present three multilingual adaptations of monolingual AMR evaluation metrics and compare the performance of these metrics to sentence-level human judgments. We then use our most highly correlated metric to evaluate the output of state-of-the-art cross-lingual AMR parsers, finding that Smatch may still be a useful metric in comparison to gold English AMRs, while our multilingual adaptation of S2match (XS2match) is best for comparison with gold in-language AMRs.",
+}
+
+@inproceedings{wein-schneider-2022-crowdsourcing,
+    title = "Crowdsourcing Preposition Sense Disambiguation with High Precision via a Priming Task",
+    author = "Wein, Shira  and
+      Schneider, Nathan",
+    editor = "Dragut, Eduard  and
+      Li, Yunyao  and
+      Popa, Lucian  and
+      Vucetic, Slobodan  and
+      Srivastava, Shashank",
+    booktitle = "Proceedings of the Fourth Workshop on Data Science with Human-in-the-Loop (Language Advances)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.dash-1.3",
+    pages = "15--22",
+    abstract = "The careful design of a crowdsourcing protocol is critical to eliciting highly accurate annotations from untrained workers. In this work, we explore the development of crowdsourcing protocols for a challenging word sense disambiguation task. We find that (a) selecting a similar example usage can serve as a proxy for selecting an explicit definition of the sense, and (b) priming workers with an additional, related task within the HIT improves performance on the main proxy task. Ultimately, we demonstrate the usefulness of our crowdsourcing elicitation technique as an effective alternative to previously investigated training strategies, which can be used if agreement on a challenging task is low.",
+}
+
+@inproceedings{leung-etal-2022-semantic,
+    title = "Semantic Similarity as a Window into Vector- and Graph-Based Metrics",
+    author = "Leung, Wai Ching  and
+      Wein, Shira  and
+      Schneider, Nathan",
+    editor = "Bosselut, Antoine  and
+      Chandu, Khyathi  and
+      Dhole, Kaustubh  and
+      Gangal, Varun  and
+      Gehrmann, Sebastian  and
+      Jernite, Yacine  and
+      Novikova, Jekaterina  and
+      Perez-Beltrachini, Laura",
+    booktitle = "Proceedings of the 2nd Workshop on Natural Language Generation, Evaluation, and Metrics (GEM)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.gem-1.8",
+    doi = "10.18653/v1/2022.gem-1.8",
+    pages = "106--115",
+    abstract = "In this work, we use sentence similarity as a lens through which to investigate the representation of meaning in graphs vs. vectors. On semantic textual similarity data, we examine how similarity metrics based on vectors alone (SENTENCE-BERT and BERTSCORE) fare compared to metrics based on AMR graphs (SMATCH and S2MATCH). Quantitative and qualitative analyses show that the AMR-based metrics can better capture meanings dependent on sentence structures, but can also be distracted by structural differences{---}whereas the BERT-based metrics represent finer-grained meanings of individual words, but often fail to capture the ordering effect of words within sentences and suffer from interpretability problems. These findings contribute to our understanding of each approach to semantic representation and motivate distinct use cases for graph and vector-based representations.",
+}
+
+@inproceedings{wein-etal-2022-effect,
+    title = "Effect of Source Language on {AMR} Structure",
+    author = "Wein, Shira  and
+      Leung, Wai Ching  and
+      Mu, Yifu  and
+      Schneider, Nathan",
+    editor = "Pradhan, Sameer  and
+      Kuebler, Sandra",
+    booktitle = "Proceedings of the 16th Linguistic Annotation Workshop (LAW-XVI) within LREC2022",
+    month = jun,
+    year = "2022",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://aclanthology.org/2022.law-1.12",
+    pages = "97--102",
+    abstract = "The Abstract Meaning Representation (AMR) annotation schema was originally designed for English. But the formalism has since been adapted for annotation in a variety of languages. Meanwhile, cross-lingual parsers have been developed to derive English AMR representations for sentences from other languages{---}implicitly assuming that English AMR can approximate an interlingua. In this work, we investigate the similarity of AMR annotations in parallel data and how much the language matters in terms of the graph structure. We set out to quantify the effect of sentence language on the structure of the parsed AMR. As a case study, we take parallel AMR annotations from Mandarin Chinese and English AMRs, and replace all Chinese concepts with equivalent English tokens. We then compare the two graphs via the Smatch metric as a measure of structural similarity. We find that source language has a dramatic impact on AMR structure, with Smatch scores below 50{\%} between English and Chinese graphs in our sample{---}an important reference point for interpreting Smatch scores in cross-lingual AMR parsing.",
 }
 
 @article{elabdali2022can,
@@ -98,93 +275,130 @@
   journal={Bilingual Writers and Corpus Analysis},
   pages={121},
   year={2022},
-  publisher={Taylor \& Francis}
+  publisher={Taylor \& Francis},
+  url="https://www.taylorfrancis.com/chapters/edit/10.4324/9781003183921-5/adult-lexical-diversity-measured-bilingually-proof-concept-study-rima-elabdali-shira-wein-lourdes-ortega?context=ubx&refId=baf5ad86-dc0f-4cb5-8b69-468c6233988d"
 }
 
-@inproceedings{wein2022crowdsourcing,
-  title={Crowdsourcing Preposition Sense Disambiguation with High Precision via a Priming Task},
-  author={Wein, Shira and Schneider, Nathan},
-  booktitle={Proceedings of the Fourth Workshop on Data Science with Human-in-the-Loop (Language Advances)},
-  pages={15--22},
-  year={2022}
+@INPROCEEDINGS{9438170,
+  author={Wein, Shira and Briggs, Paul},
+  booktitle={2021 IEEE Aerospace Conference (50100)}, 
+  title={A Fully Automated Approach to Requirement Extraction from Design Documents}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-7},
+  keywords={Measurement;Databases;Manuals;Writing;Feature extraction;Software;Natural language processing},
+  doi={10.1109/AERO50100.2021.9438170},
+  url="https://ieeexplore.ieee.org/abstract/document/9438170"
 }
 
-@inproceedings{leung2022semantic,
-  title={Semantic Similarity as a Window into Vector-and Graph-Based Metrics},
-  author={Leung, Wai Ching and Wein, Shira and Schneider, Nathan},
-  booktitle={Proceedings of the 2nd Workshop on Natural Language Generation, Evaluation, and Metrics (GEM)},
-  pages={106--115},
-  year={2022}
+@inproceedings{wein-schneider-2021-classifying,
+    title = "Classifying Divergences in Cross-lingual {AMR} Pairs",
+    author = "Wein, Shira  and
+      Schneider, Nathan",
+    editor = "Bonial, Claire  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the Joint 15th Linguistic Annotation Workshop (LAW) and 3rd Designing Meaning Representations (DMR) Workshop",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.law-1.6",
+    doi = "10.18653/v1/2021.law-1.6",
+    pages = "56--65",
+    abstract = "Translation divergences are varied and widespread, challenging approaches that rely on parallel text. To annotate translation divergences, we propose a schema grounded in the Abstract Meaning Representation (AMR), a sentence-level semantic framework instantiated for a number of languages. By comparing parallel AMR graphs, we can identify specific points of divergence. Each divergence is labeled with both a type and a cause. We release a small corpus of annotated English-Spanish data, and analyze the annotations in our corpus.",
 }
 
-@article{wein2023translationese,
-  title={Translationese Reduction using Abstract Meaning Representation},
-  author={Wein, Shira and Schneider, Nathan},
-  journal={arXiv preprint arXiv:2304.11501},
-  year={2023}
+@inproceedings{gessler-etal-2021-supersense,
+    title = "Supersense and Sensibility: Proxy Tasks for Semantic Annotation of Prepositions",
+    author = "Gessler, Luke  and
+      Wein, Shira  and
+      Schneider, Nathan",
+    editor = "Ettinger, Allyson  and
+      Pavlick, Ellie  and
+      Prickett, Brandon",
+    booktitle = "Proceedings of the Society for Computation in Linguistics 2021",
+    month = feb,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.scil-1.58",
+    pages = "464--466",
 }
 
-@article{opitz2023amr4nli,
-  title={AMR4NLI: Interpretable and robust NLI measures from semantic graphs},
-  author={Opitz, Juri and Wein, Shira and Steen, Julius and Frank, Anette and Schneider, Nathan},
-  journal={arXiv preprint arXiv:2306.00936},
-  year={2023}
+@inproceedings{manning-etal-2020-human,
+    title = "A Human Evaluation of {AMR}-to-{E}nglish Generation Systems",
+    author = "Manning, Emma  and
+      Wein, Shira  and
+      Schneider, Nathan",
+    editor = "Scott, Donia  and
+      Bel, Nuria  and
+      Zong, Chengqing",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2020.coling-main.420",
+    doi = "10.18653/v1/2020.coling-main.420",
+    pages = "4773--4786",
+    abstract = "Most current state-of-the art systems for generating English text from Abstract Meaning Representation (AMR) have been evaluated only using automated metrics, such as BLEU, which are known to be problematic for natural language generation. In this work, we present the results of a new human evaluation which collects fluency and adequacy scores, as well as categorization of error types, for several recent AMR generation systems. We discuss the relative quality of these systems and how our results compare to those of automatic metrics, finding that while the metrics are mostly successful in ranking systems overall, collecting human judgments allows for more nuanced comparisons. We also analyze common errors made by these systems.",
 }
 
-@article{homan2023follow,
-  title={Follow the leader (board) with confidence: Estimating p-values from a single test set with item and response variance},
-  author={Homan, Chris and Welty, Chris and Aroyo, Lora and Wein, Shira},
-  year={2023}
+@inproceedings{kranzlein-etal-2020-pastrie,
+    title = "{PASTRIE}: A Corpus of Prepositions Annotated with Supersense Tags in {R}eddit International {E}nglish",
+    author = "Kranzlein, Michael  and
+      Manning, Emma  and
+      Peng, Siyao  and
+      Wein, Shira  and
+      Arora, Aryaman  and
+      Schneider, Nathan",
+    editor = "Dipper, Stefanie  and
+      Zeldes, Amir",
+    booktitle = "Proceedings of the 14th Linguistic Annotation Workshop",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.law-1.10",
+    pages = "105--116",
+    abstract = "We present the Prepositions Annotated with Supsersense Tags in Reddit International English ({``}PASTRIE{''}) corpus, a new dataset containing manually annotated preposition supersenses of English data from presumed speakers of four L1s: English, French, German, and Spanish. The annotations are comprehensive, covering all preposition types and tokens in the sample. Along with the corpus, we provide analysis of distributional patterns across the included L1s and a discussion of the influence of L1s on L2 preposition choice.",
 }
 
-@inproceedings{wein2023follow,
-  title={Follow the leader (board) with confidence: Estimating p-values from a single test set with item and response variance},
-  author={Wein, Shira and Homan, Christopher and Aroyo, Lora and Welty, Chris},
-  booktitle={Findings of the Association for Computational Linguistics: ACL 2023},
-  pages={3138--3161},
-  year={2023}
+@inproceedings{gessler-etal-2020-supersense,
+    title = "Supersense and Sensibility: Proxy Tasks for Semantic Annotation of Prepositions",
+    author = "Gessler, Luke  and
+      Wein, Shira  and
+      Schneider, Nathan",
+    editor = "Dipper, Stefanie  and
+      Zeldes, Amir",
+    booktitle = "Proceedings of the 14th Linguistic Annotation Workshop",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.law-1.11",
+    pages = "117--126",
+    abstract = "Prepositional supersense annotation is time-consuming and requires expert training. Here, we present two sensible methods for obtaining prepositional supersense annotations indirectly by eliciting surface substitution and similarity judgments. Four pilot studies suggest that both methods have potential for producing prepositional supersense annotations that are comparable in quality to expert annotations.",
 }
 
-@inproceedings{wein2023comparing,
-  title={Comparing UMR and Cross-lingual Adaptations of AMR},
-  author={Wein, Shira and Bonn, Julia},
-  booktitle={Proceedings of the Fourth International Workshop on Designing Meaning Representations},
-  pages={23--33},
-  year={2023}
-}
-
-@inproceedings{bonn2023umr,
-  title={UMR Annotation of Multiword Expressions},
-  author={Bonn, Julia and Cowell, Andrew and Hajic, Jan and Palmer, Alexis and Palmer, Martha and Pustejovsky, James and Sun, Haibo and Ure{\v{s}}ov{\'a}, Zdenka and Wein, Shira and Xue, Nianwen and others},
-  booktitle={Proceedings of the Fourth International Workshop on Designing Meaning Representations},
-  pages={99--109},
-  year={2023}
-}
-
-@article{homanmany,
-  title={How Many Raters Do You Need? Power Analysis for Foundation Models},
-  author={Homan, Christopher M and Wein, Shira and Aroyo, Lora M and Welty, Chris},
-  year={2023}
-}
-
-@inproceedings{wein2023human,
-  title={Human Raters Cannot Distinguish English Translations from Original English Texts},
-  author={Wein, Shira},
-  booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing},
-  year={2023}
-}
-
-@article{wein2023assessing,
-  title={Assessing the Cross-linguistic Utility of Abstract Meaning Representation},
-  author={Wein, Shira and Schneider, Nathan},
-  journal={Computational Linguistics},
-  pages={1--55},
-  year={2023},
-  publisher={MIT Press One Broadway, 12th Floor, Cambridge, Massachusetts 02142, USA~…}
-}
-
-@article{wein2023cs1,
-  title={A CS1 Open Data Analysis Project with Embedded Ethics},
-  author={Wein, Shira and Patterson, Alicia and Brick, Shannon and Luken, Sydney},
-  year={2023}
+@inproceedings{wein-2020-classification,
+    title = "Classification and Analysis of Neologisms Produced by Learners of {S}panish: Effects of Proficiency and Task",
+    author = "Wein, Shira",
+    editor = "Cunha, Rossana  and
+      Shaikh, Samira  and
+      Varis, Erika  and
+      Georgi, Ryan  and
+      Tsai, Alicia  and
+      Anastasopoulos, Antonios  and
+      Chandu, Khyathi Raghavi",
+    booktitle = "Proceedings of the The Fourth Widening Natural Language Processing Workshop",
+    month = jul,
+    year = "2020",
+    address = "Seattle, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.winlp-1.22",
+    doi = "10.18653/v1/2020.winlp-1.22",
+    pages = "88--91",
+    abstract = "The Spanish Learner Language Oral Corpora (SPLLOC) of transcribed conversations between investigators and language learners contains a set of neologism tags. In this work, the utterances tagged as neologisms are broken down into three categories: true neologisms, loanwords, and errors. This work examines the relationships between neologism, loanword, and error production and both language learner level and conversation task. The results of this study suggest that loanwords and errors are produced most frequently by language learners with moderate experience, while neologisms are produced most frequently by native speakers. This study also indicates that tasks that require descriptions of images draw more neologism, loanword and error production. We ultimately present a unique analysis of the implications of neologism, loanword, and error production useful for further work in second language acquisition research, as well as for language educators.",
 }
