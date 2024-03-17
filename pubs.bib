@@ -1,9 +1,62 @@
+@inproceedings{wein-etal-2024-barriers,
+    title = "Barriers to Effective Evaluation of Simultaneous Interpretation",
+    author = "Wein, Shira  and
+      I, Te  and
+      Cherry, Colin  and
+      Juraska, Juraj  and
+      Padfield, Dirk  and
+      Macherey, Wolfgang",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2024",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-eacl.15",
+    pages = "209--219",
+    abstract = "Simultaneous interpretation is an especially challenging form of translation because it requires converting speech from one language to another in real-time. Though prior work has relied on out-of-the-box machine translation metrics to evaluate interpretation data, we hypothesize that strategies common in high-quality human interpretations, such as summarization, may not be handled well by standard machine translation metrics. In this work, we examine both qualitatively and quantitatively four potential barriers to evaluation of interpretation: disfluency, summarization, paraphrasing, and segmentation. Our experiments reveal that, while some machine translation metrics correlate fairly well with human judgments of interpretation quality, much work is still needed to account for strategies of interpretation during evaluation. As a first step to address this, we develop a fine-tuned model for interpretation evaluation, and achieve better correlation with human judgments than the state-of-the-art machine translation metrics.",
+}
+
+@inproceedings{wein-schneider-2024-lost,
+    title = "Lost in Translationese? Reducing Translation Effect Using {A}bstract {M}eaning {R}epresentation",
+    author = "Wein, Shira  and
+      Schneider, Nathan",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.eacl-long.45",
+    pages = "753--765",
+    abstract = "Translated texts bear several hallmarks distinct from texts originating in the language ({``}translationese{''}). Though individual translated texts are often fluent and preserve meaning, at a large scale, translated texts have statistical tendencies which distinguish them from text originally written in the language and can affect model performance. We frame the novel task of translationese reduction and hypothesize that Abstract Meaning Representation (AMR), a graph-based semantic representation which abstracts away from the surface form, can be used as an interlingua to reduce the amount of translationese in translated texts. By parsing English translations into an AMR and then generating text from that AMR, the result more closely resembles originally English text across three quantitative macro-level measures, without severely compromising fluency or adequacy. We compare our AMR-based approach against three other techniques based on machine translation or paraphrase generation. This work represents the first approach to reducing translationese in text and highlights the promise of AMR, given that our AMR-based approach outperforms more computationally intensive methods.",
+}
+
+@article{10.1162/coli_a_00503,
+    author = {Wein, Shira and Schneider, Nathan},
+    title = "{Assessing the Cross-linguistic Utility of Abstract Meaning Representation}",
+    journal = {Computational Linguistics},
+    pages = {1-55},
+    year = {2023},
+    month = {12},
+    abstract = "{Semantic representations capture the meaning of a text. Abstract Meaning Representation (AMR), a type of semantic representation, focuses on predicate-argument structure and abstracts away from surface form. Though AMR was developed initially for English, it has now been adapted to a multitude of languages in the form of non-English annotation schemas, cross-lingual text-to-AMR parsing, and AMR-to-(non-English) text generation. We advance prior work on cross-lingual AMR by thoroughly investigating the amount, types, and causes of differences which appear in AMRs of different languages. Further, we compare how AMR captures meaning in cross-lingual pairs versus strings, and show that AMR graphs are able to draw out fine-grained differences between parallel sentences. We explore three primary research questions: (1) What are the types and causes of differences in parallel AMRs? (2) How can we measure the amount of difference between AMR pairs in different languages? (3) Given that AMR structure is affected by language and exhibits cross-lingual differences, how do cross-lingual AMR pairs compare to string-based representations of cross-lingual sentence pairs? We find that the source language itself does have a measurable impact on AMR structure, and that translation divergences and annotator choices also lead to differences in cross-lingual AMR pairs. We explore the implications of this finding throughout our study, concluding that, while AMR is useful to capture meaning across languages, evaluations need to take into account source language influences if they are to paint an accurate picture of system output, and meaning generally.}",
+    issn = {0891-2017},
+    doi = {10.1162/coli_a_00503},
+    url = {https://doi.org/10.1162/coli\_a\_00503},
+    eprint = {https://direct.mit.edu/coli/article-pdf/doi/10.1162/coli\_a\_00503/2198446/coli\_a\_00503.pdf},
+}
+
 @inproceedings{wein-etal-2023-follow,
     title = "Follow the leader(board) with confidence: Estimating p-values from a single test set with item and response variance",
     author = "Wein, Shira  and
       Homan, Christopher  and
       Aroyo, Lora  and
       Welty, Chris",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
     booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
     month = jul,
     year = "2023",
@@ -18,6 +71,9 @@
 @inproceedings{wein-2023-human,
     title = "Human Raters Cannot Distinguish {E}nglish Translations from Original {E}nglish Texts",
     author = "Wein, Shira",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
     booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
     month = dec,
     year = "2023",
@@ -34,6 +90,8 @@
     author = "Wein, Shira  and
       Wang, Zhuxin  and
       Schneider, Nathan",
+    editor = "Amblard, Maxime  and
+      Breitholtz, Ellen",
     booktitle = "Proceedings of the 15th International Conference on Computational Semantics",
     month = jun,
     year = "2023",
@@ -51,6 +109,8 @@
       Steen, Julius  and
       Frank, Anette  and
       Schneider, Nathan",
+    editor = "Amblard, Maxime  and
+      Breitholtz, Ellen",
     booktitle = "Proceedings of the 15th International Conference on Computational Semantics",
     month = jun,
     year = "2023",
@@ -65,6 +125,8 @@
     title = "Comparing {UMR} and Cross-lingual Adaptations of {AMR}",
     author = "Wein, Shira  and
       Bonn, Julia",
+    editor = "Bonn, Julia  and
+      Xue, Nianwen",
     booktitle = "Proceedings of the Fourth International Workshop on Designing Meaning Representations",
     month = jun,
     year = "2023",
@@ -88,6 +150,8 @@
       Wein, Shira  and
       Xue, Nianwen  and
       Zhao, Jin",
+    editor = "Bonn, Julia  and
+      Xue, Nianwen",
     booktitle = "Proceedings of the Fourth International Workshop on Designing Meaning Representations",
     month = jun,
     year = "2023",
@@ -96,30 +160,6 @@
     url = "https://aclanthology.org/2023.dmr-1.10",
     pages = "99--109",
     abstract = "Rooted in AMR, Uniform Meaning Representation (UMR) is a graph-based formalism with nodes as concepts and edges as relations between them. When used to represent natural language semantics, UMR maps words in a sentence to concepts in the UMR graph. Multiword expressions (MWEs) pose a particular challenge to UMR annotation because they deviate from the default one-to-one mapping between words and concepts. There are different types of MWEs which require different kinds of annotation that must be specified in guidelines. This paper discusses the specific treatment for each type of MWE in UMR.",
-}
-
-@misc{wein2024lost,
-      title={Lost in Translationese? Reducing Translation Effect Using Abstract Meaning Representation}, 
-      author={Shira Wein and Nathan Schneider},
-      year={2024},
-      eprint={2304.11501},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url="https://arxiv.org/abs/2304.11501"
-}
-
-@article{10.1162/coli_a_00503,
-    author = {Wein, Shira and Schneider, Nathan},
-    title = "{Assessing the Cross-linguistic Utility of Abstract Meaning Representation}",
-    journal = {Computational Linguistics},
-    pages = {1-55},
-    year = {2023},
-    month = {12},
-    abstract = "{Semantic representations capture the meaning of a text. Abstract Meaning Representation (AMR), a type of semantic representation, focuses on predicate-argument structure and abstracts away from surface form. Though AMR was developed initially for English, it has now been adapted to a multitude of languages in the form of non-English annotation schemas, cross-lingual text-to-AMR parsing, and AMR-to-(non-English) text generation. We advance prior work on cross-lingual AMR by thoroughly investigating the amount, types, and causes of differences which appear in AMRs of different languages. Further, we compare how AMR captures meaning in cross-lingual pairs versus strings, and show that AMR graphs are able to draw out fine-grained differences between parallel sentences. We explore three primary research questions: (1) What are the types and causes of differences in parallel AMRs? (2) How can we measure the amount of difference between AMR pairs in different languages? (3) Given that AMR structure is affected by language and exhibits cross-lingual differences, how do cross-lingual AMR pairs compare to string-based representations of cross-lingual sentence pairs? We find that the source language itself does have a measurable impact on AMR structure, and that translation divergences and annotator choices also lead to differences in cross-lingual AMR pairs. We explore the implications of this finding throughout our study, concluding that, while AMR is useful to capture meaning across languages, evaluations need to take into account source language influences if they are to paint an accurate picture of system output, and meaning generally.}",
-    issn = {0891-2017},
-    doi = {10.1162/coli_a_00503},
-    url = {https://doi.org/10.1162/coli\_a\_00503},
-    eprint = {https://direct.mit.edu/coli/article-pdf/doi/10.1162/coli\_a\_00503/2198446/coli\_a\_00503.pdf},
 }
 
 @article{homanmany,
@@ -132,7 +172,7 @@
 
 @book{wein2023cs1,
 author = {Wein, Shira and Patterson, Alicia and Brick, Shannon and Luken, Sydney},
-year = {2023},
+year = {2022},
 month = {11},
 title = {A CS1 Open Data Analysis Project with Embedded Ethics},
 isbn = {9798400704680},
@@ -150,6 +190,7 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
       Nelson, Alex  and
       Harter, Leonie  and
       Schneider, Nathan",
+    editor = "Derczynski, Leon",
     booktitle = "Northern European Journal of Language Technology, Volume 8",
     year = "2022",
     address = "Copenhagen, Denmark",
@@ -163,6 +204,26 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
     title = "Accounting for Language Effect in the Evaluation of Cross-lingual {AMR} Parsers",
     author = "Wein, Shira  and
       Schneider, Nathan",
+    editor = "Calzolari, Nicoletta  and
+      Huang, Chu-Ren  and
+      Kim, Hansaem  and
+      Pustejovsky, James  and
+      Wanner, Leo  and
+      Choi, Key-Sun  and
+      Ryu, Pum-Mo  and
+      Chen, Hsin-Hsi  and
+      Donatelli, Lucia  and
+      Ji, Heng  and
+      Kurohashi, Sadao  and
+      Paggio, Patrizia  and
+      Xue, Nianwen  and
+      Kim, Seokhwan  and
+      Hahm, Younggyun  and
+      He, Zhong  and
+      Lee, Tony Kyungil  and
+      Santus, Enrico  and
+      Bond, Francis  and
+      Na, Seung-Hoon",
     booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
     month = oct,
     year = "2022",
@@ -177,6 +238,11 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
     title = "Crowdsourcing Preposition Sense Disambiguation with High Precision via a Priming Task",
     author = "Wein, Shira  and
       Schneider, Nathan",
+    editor = "Dragut, Eduard  and
+      Li, Yunyao  and
+      Popa, Lucian  and
+      Vucetic, Slobodan  and
+      Srivastava, Shashank",
     booktitle = "Proceedings of the Fourth Workshop on Data Science with Human-in-the-Loop (Language Advances)",
     month = dec,
     year = "2022",
@@ -192,6 +258,14 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
     author = "Leung, Wai Ching  and
       Wein, Shira  and
       Schneider, Nathan",
+    editor = "Bosselut, Antoine  and
+      Chandu, Khyathi  and
+      Dhole, Kaustubh  and
+      Gangal, Varun  and
+      Gehrmann, Sebastian  and
+      Jernite, Yacine  and
+      Novikova, Jekaterina  and
+      Perez-Beltrachini, Laura",
     booktitle = "Proceedings of the 2nd Workshop on Natural Language Generation, Evaluation, and Metrics (GEM)",
     month = dec,
     year = "2022",
@@ -209,6 +283,8 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
       Leung, Wai Ching  and
       Mu, Yifu  and
       Schneider, Nathan",
+    editor = "Pradhan, Sameer  and
+      Kuebler, Sandra",
     booktitle = "Proceedings of the 16th Linguistic Annotation Workshop (LAW-XVI) within LREC2022",
     month = jun,
     year = "2022",
@@ -246,6 +322,8 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
     title = "Classifying Divergences in Cross-lingual {AMR} Pairs",
     author = "Wein, Shira  and
       Schneider, Nathan",
+    editor = "Bonial, Claire  and
+      Xue, Nianwen",
     booktitle = "Proceedings of the Joint 15th Linguistic Annotation Workshop (LAW) and 3rd Designing Meaning Representations (DMR) Workshop",
     month = nov,
     year = "2021",
@@ -262,6 +340,9 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
     author = "Gessler, Luke  and
       Wein, Shira  and
       Schneider, Nathan",
+    editor = "Ettinger, Allyson  and
+      Pavlick, Ellie  and
+      Prickett, Brandon",
     booktitle = "Proceedings of the Society for Computation in Linguistics 2021",
     month = feb,
     year = "2021",
@@ -276,6 +357,9 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
     author = "Manning, Emma  and
       Wein, Shira  and
       Schneider, Nathan",
+    editor = "Scott, Donia  and
+      Bel, Nuria  and
+      Zong, Chengqing",
     booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
     month = dec,
     year = "2020",
@@ -295,6 +379,8 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
       Wein, Shira  and
       Arora, Aryaman  and
       Schneider, Nathan",
+    editor = "Dipper, Stefanie  and
+      Zeldes, Amir",
     booktitle = "Proceedings of the 14th Linguistic Annotation Workshop",
     month = dec,
     year = "2020",
@@ -310,6 +396,8 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
     author = "Gessler, Luke  and
       Wein, Shira  and
       Schneider, Nathan",
+    editor = "Dipper, Stefanie  and
+      Zeldes, Amir",
     booktitle = "Proceedings of the 14th Linguistic Annotation Workshop",
     month = dec,
     year = "2020",
@@ -323,6 +411,13 @@ url="https://dl.acm.org/doi/pdf/10.1145/3631987"
 @inproceedings{wein-2020-classification,
     title = "Classification and Analysis of Neologisms Produced by Learners of {S}panish: Effects of Proficiency and Task",
     author = "Wein, Shira",
+    editor = "Cunha, Rossana  and
+      Shaikh, Samira  and
+      Varis, Erika  and
+      Georgi, Ryan  and
+      Tsai, Alicia  and
+      Anastasopoulos, Antonios  and
+      Chandu, Khyathi Raghavi",
     booktitle = "Proceedings of the The Fourth Widening Natural Language Processing Workshop",
     month = jul,
     year = "2020",
