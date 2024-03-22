@@ -17,3 +17,9 @@ body {
 .lavender-blush-div {
   background-color: #FFF0F5;
 }
+
+body {
+    background-image: url('background4.jpg');
+    background-size: cover;
+    background-position: center top;   
+}
