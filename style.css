@@ -18,7 +18,7 @@ body {
   background-color: #FFF0F5;
 }
 
-body {
+body-image {
     background-image: url('background4.jpg');
     background-size: cover;
     background-position: center top;   
