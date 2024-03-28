@@ -43,14 +43,13 @@
            
          <h3>
             <i class="fa-solid fa-circle-user"></i> <a href='https://shirawein.github.io'>About Me</a> &#9900; 
-            <i class="fa-solid fa-book-open"></i><script src="https://bibbase.org/show?bib=[URL-OF-BIBTEX-FILE]&jsonp=1">Pubs</script> &#9900; 
-            <i class="fa-solid fa-book-open"></i> <a href='https://shirawein.github.io/?page=publications'>Publications</a> &#9900; 
+            <i class="fa-solid fa-book-open"></i><script src="https://bibbase.org/show?bib=https://shirawein.github.io/pubs.bib&jsonp=1">Pubs</script> &#9900; 
+            <i class="fa-solid fa-book-open"></i> <a href='https://shirawein.github.io/?page=publications.php'>Publications</a> &#9900; 
             <i class="fa-solid fa-magnifying-glass-chart"></i> <a href='https://shirawein.github.io/?page=research'>Research</a> &#9900; 
             <i class="fa-solid fa-user-graduate"></i> <a href='https://shirawein.github.io/?page=teaching'>Teaching</a> &#9900; 
             <i class="fa-solid fa-file-lines"></i> <a href='https://shirawein.github.io/?page=cv'>CV</a>
           </h3>
 
-    <!--   <div id="content"><script src="https://bibbase.org/show?bib=https://shirawein.github.io/pubs.bib&jsonp=1"></script></div> -->  
          <div id="content">
           <h3>About Me</h3>
           <p style="max-width: 90%; font-size:14px;">
