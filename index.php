@@ -43,7 +43,6 @@
            
          <h3>
             <i class="fa-solid fa-circle-user"></i> <a href='https://shirawein.github.io'>About Me</a> &#9900; 
-            <i class="fa-solid fa-book-open"></i><script src="https://bibbase.org/show?bib=https://shirawein.github.io/pubs.bib&jsonp=1">Pubs</script> &#9900; 
             <i class="fa-solid fa-book-open"></i> <a href='https://shirawein.github.io/?page=publications.php'>Publications</a> &#9900; 
             <i class="fa-solid fa-magnifying-glass-chart"></i> <a href='https://shirawein.github.io/?page=research'>Research</a> &#9900; 
             <i class="fa-solid fa-user-graduate"></i> <a href='https://shirawein.github.io/?page=teaching'>Teaching</a> &#9900; 
