@@ -23,8 +23,9 @@
       }
     });
     </script>
-      <script>
+   <script>
     $(document).ready(function(){
+      $("#publications").load("publications.php");
 
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
@@ -33,13 +34,11 @@
         $("#bibscript").load(page.concat(".html"));
       }
       else {
-        // $("#content").load("publications.html");
+        // $("#bibscript").load("publications.html");
       }
     });
-</script>
-
-</head>
-
+    </script>
+  </head>
   
 <!--   <body style="background-color: rgba(241, 243, 244, 1); background-image: url('pink_background.jpg'); background-repeat: repeat-y; background-size: 1000px 3000px;"> -->
       <body style="background-color: rgba(255, 255, 255, 1); background-image: url('brush_background.jpg'); background-repeat: repeat-y; background-size: 350px 3000px;">
@@ -55,22 +54,26 @@
       </div>
       <div style="width:10px; float:left; overflow:hidden; height:1px;"></div>
             
-      <div class="col-md-8">
+      <div class="col-md-8" style="background-color: rgba(255, 255, 255, 1);">
            
          <h3 style="text-align: center;">
-            <i class="fa-solid fa-circle-user"></i> <a href='https://shirawein.github.io'>About Me</a> &#9900; 
-            <i class="fa-solid fa-book-open"></i> <a href='https://shirawein.github.io/publications'>Publications</a> &#9900; 
-            <i class="fa-solid fa-magnifying-glass-chart"></i> <a href='https://shirawein.github.io/?page=research'>Research</a> &#9900; 
-            <i class="fa-solid fa-user-graduate"></i> <a href='https://shirawein.github.io/?page=teaching'>Teaching</a> &#9900; 
-            <i class="fa-solid fa-file-lines"></i> <a href='https://shirawein.github.io/?page=cv'>CV</a>
+            <span style="font-size:16px;"><i class="fa-solid fa-circle-user"></i></span> <a href='https://shirawein.github.io'>About Me</a>&nbsp;&nbsp;&nbsp;
+            <span style="font-size:16px;"><i class="fa-solid fa-book-open"></i></span> <a href='https://shirawein.github.io/publications'>Publications</a>&nbsp;&nbsp;&nbsp;
+            <span style="font-size:16px;"><i class="fa-solid fa-magnifying-glass-chart"></i></span> <a href='https://shirawein.github.io/?page=research'>Research</a>&nbsp;&nbsp;&nbsp;
+            <span style="font-size:16px;"><i class="fa-solid fa-user-graduate"></i></span> <a href='https://shirawein.github.io/?page=teaching'>Teaching</a>&nbsp;&nbsp;&nbsp;
+            <span style="font-size:16px;"><i class="fa-solid fa-file-lines"></i></span> <a href='https://shirawein.github.io/?page=cv'>CV</a>&nbsp;
           </h3>
+         <div class="spacer"> </div>
         
-<div class="spacer"> </div>
+         <div id="content">
+         
+          <div id="bibscript"><script src="https://bibbase.org/show?bib=https://shirawein.github.io/pubs.bib&owner=Wein&theme=dividers&fullnames=1&showSearch=true&jsonp=1"></script></div>
 
-<div id="bibscript"><script src="https://bibbase.org/show?bib=https://shirawein.github.io/pubs.bib&owner=Wein&theme=dividers&fullnames=1&showSearch=true&jsonp=1"></script></div>
-
-</div>
-</div>
+          
+        </div>
+        
+      </div>
+    </div>
 
  </body>
 </html>
