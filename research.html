@@ -1,23 +1,208 @@
+<head> 
+    <title>Shira Wein, Ph.D.</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />  
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d880907dbc.js" crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function(){
+      $("#publications").load("publications.php");
+
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      if (urlParams.has('page')) {
+        const page = urlParams.get('page');
+        $("#content").load(page.concat(".html"));
+      }
+      else {
+        // $("#content").load("publications.html");
+      }
+    });
+    </script>
+   <script>
+    $(document).ready(function(){
+      $("#publications").load("publications.php");
+
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      if (urlParams.has('page')) {
+        const page = urlParams.get('page');
+        $("#bibscript").load(page.concat(".html"));
+      }
+      else {
+        // $("#bibscript").load("publications.html");
+      }
+    });
+    </script>
+    <style>
+    * {box-sizing: border-box;}
+    /* body {font-family: Verdana, sans-serif;}
+    */.mySlides {display: none;}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: black;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: -14;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 4s;
+    }
+
+    @keyframes fade {
+      from {opacity: .8} 
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+    }
+    </style>
+  </head>
+
 <div style="text-align: center;">
   <img width="300" src="acnlp_logo.png" alt="ACNLP Logo">
 </div>
 
 <h3>Research Lab</h3>
 <p style="font-size:15px;">
-My research lab is called <b>ACNLP</b> (Amherst College Natural Language Processing). 
-I will be looking to take on and advise
-undergraduate research assistants at Amherst. If you are interested in joining the lab, please fill out 
-<a href="https://forms.gle/C7wkgSUAgM3B5zMd9">this interest form.</a> Thank you!
-</p>
-<br/>
-
-<h3>Research Interests</h3>
-<p style="font-size:15px;">
 My research interests include computational semantics, model evaluation, translated texts,
 multilingualism/cross-lingual methods, and corpus linguistics.
 Broadly, I’m currently working on: (1) meaning across languages and (2) evaluation practices.
+  
+My research lab with undergraduates is called <b>ACNLP</b> (Amherst College Natural Language Processing).
+I am currently looking to take on and advise
+undergraduate research assistants at Amherst. If you are interested in joining the lab, please contact me and
+fill out <a href="https://forms.gle/C7wkgSUAgM3B5zMd9">this interest form.</a> Thank you!
 </p>
 <br/>
+
+<h3>Recent Research Highlights</h3>
+        <p style="font-size:14px";><i>Click the caption below a figure to be taken to the full article.</i></p>
+
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="MASSIVE-figure.pdf" style="width:100%; display: block; margin-left: auto; margin-right: auto;">
+          <p style="font-size:16px";><a href="https://aclanthology.org/2024.starsem-1.1.pdf" target="_blank" rel="noopener noreferrer">Process diagram for joint AMR-SPARQL model.</a></p>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="COLI-figure.pdf" style="width:100%; display: block; margin-left: auto; margin-right: auto;">
+          <p style="font-size:16px";><a href="https://direct.mit.edu/coli/article/50/2/419/118771/Assessing-the-Cross-linguistic-Utility-of-Abstract" target="_blank" rel="noopener noreferrer">Parallel English and Spanish AMR graphs.</a></p>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="Pvalue-figure.pdf" style="width:80%; display: block; margin-left: auto; margin-right: auto;">
+          <p style="font-size:16px";><a href="https://aclanthology.org/2023.findings-acl.196.pdf" target="_blank" rel="noopener noreferrer">Comparing estimated and true p-values for 8 different metrics.</a></p>
+        </div>
+
+      <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="Bandwagon-figure.pdf" style="width:45%; display: block; margin-left: auto; margin-right: auto;">
+          <p style="font-size:16px";><a href="https://aclanthology.org/2023.dmr-1.10.pdf" target="_blank" rel="noopener noreferrer">Roles for literal and figurative interpretations of "jump on the bandwagon."</a></p>
+        </div>
+
+      <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="FineGrained-figure.pdf" style="width:90%; display: block; margin-left: auto; margin-right: auto;">
+          <p style="font-size:16px";><a href="https://aclanthology.org/2023.iwcs-1.16.pdf" target="_blank" rel="noopener noreferrer">Range of scores for human, AMR, and BERTscore judgments of textual similarity.</a></p>
+        </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+
+        <script>
+          let slideIndex = 0;
+          showSlides();
+
+          function currentSlide(n) {
+              showSlides_specified(slideIndex = n);
+          }
+
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+          }
+
+          function showSlides_specified(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
+
+<h3>Disseration</h3>
 <p style="font-size:15px;">
 My <a href="https://repository.library.georgetown.edu/bitstream/handle/10822/1088595/Wein_georgetown_0076D_15807.pdf?sequence=1&isAllowed=y"><b>Doctoral Dissertation</b>, 
 titled "Development & Evaluation of Cross-lingual Abstract Meaning Representation,"</a>
