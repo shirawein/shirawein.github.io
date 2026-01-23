@@ -8,6 +8,56 @@
       url={https://arxiv.org/abs/2512.07068}, 
 }
 
+@inproceedings{markle-etal-2025-generating,
+    title = "Generating Text from Uniform Meaning Representation",
+    author = "Markle, Emma  and
+      Iranmanesh, Reihaneh  and
+      Wein, Shira",
+    editor = "Inui, Kentaro  and
+      Sakti, Sakriani  and
+      Wang, Haofen  and
+      Wong, Derek F.  and
+      Bhattacharyya, Pushpak  and
+      Banerjee, Biplab  and
+      Ekbal, Asif  and
+      Chakraborty, Tanmoy  and
+      Singh, Dhirendra Pratap",
+    booktitle = "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+    month = dec,
+    year = "2025",
+    address = "Mumbai, India",
+    publisher = "The Asian Federation of Natural Language Processing and The Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.ijcnlp-long.16/",
+    pages = "259--271",
+    ISBN = "979-8-89176-298-5",
+    abstract = "Uniform Meaning Representation (UMR) is a recently developed graph-based semantic representation, which expands on Abstract Meaning Representation (AMR) in a number of ways, in particular through the inclusion of document-level information and multilingual flexibility. In order to effectively adopt and leverage UMR for downstream tasks, efforts must be placed toward developing a UMR technological ecosystem. Though only a small amount of UMR annotations have been produced to date, in this work, we investigate the first approaches to producing text from multilingual UMR graphs. Exploiting the structural similarity between UMR and AMR graphs and the wide availability of AMR technologies, we introduce (1) a baseline approach which passes UMR graphs to AMR-to-text generation models, (2) a pipeline conversion of UMR to AMR, then using AMR-to-text generation models, and (3) a fine-tuning approach for both foundation models and AMR-to-text generation models with UMR data. Our best performing models achieve multilingual BERTscores of 0.825 for English and 0.882 for Chinese, a promising indication of the effectiveness of fine-tuning approaches for UMR-to-text generation even with limited UMR data."
+}
+
+@inproceedings{enhos-etal-2025-minimizing,
+    title = "Minimizing Queries, Maximizing Impact: Adaptive Score-Based Attack and Defense for Sentiment Analysis",
+    author = "Enhos, Yigit Efe  and
+      Wein, Shira  and
+      Alfeld, Scott",
+    editor = "Inui, Kentaro  and
+      Sakti, Sakriani  and
+      Wang, Haofen  and
+      Wong, Derek F.  and
+      Bhattacharyya, Pushpak  and
+      Banerjee, Biplab  and
+      Ekbal, Asif  and
+      Chakraborty, Tanmoy  and
+      Singh, Dhirendra Pratap",
+    booktitle = "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+    month = dec,
+    year = "2025",
+    address = "Mumbai, India",
+    publisher = "The Asian Federation of Natural Language Processing and The Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.ijcnlp-long.15/",
+    pages = "246--258",
+    ISBN = "979-8-89176-298-5",
+    abstract = "While state-of-the-art large language models find high rates of success on text classification tasks such as sentiment analysis, they still exhibit vulnerabilities to adversarial examples: meticulously crafted perturbations of input data that guide models into making false predictions. These adversarial attacks are of particular concern when the systems in question are user-facing. While many attacks are able to reduce the accuracy of Transformer-based classifiers by a substantial margin, they often require a large amount of computational time and a large number of queries made to the attacked model, which makes the attacks susceptible to detection. In this work, we resolve the limitations of high query counts and necessary computational time by proposing a query-efficient word-level attack that is fast during deployment and does not compromise the attack success rate of state-of-the-art methods. Our attack constructs a dictionary of adversarial word substitutions based on prior data and leverages these substitutions to flip the sentiment classification of the text. Our attack method achieves an average of 27.49 queries{---}over 30{\%} fewer than the closest competitor{---}while maintaining a 99.70{\%} attack success rate. We also develop an effective defense strategy inspired by our attack approach."
+}
+
 @inproceedings{ji-wein-2025-gpt4amr,
     title = "{GPT}4{AMR}: Does {LLM}-based Paraphrasing Improve {AMR}-to-text Generation Fluency?",
     author = "Ji, Jiyuan  and
@@ -58,16 +108,6 @@
     pages = "202--211",
     ISBN = "979-8-89176-340-1",
     abstract = "Natural Language Inference (NLI) relies heavily on adequately parsing the semantic content of the premise and hypothesis.In this work, we investigate whether adding semantic information in the form of an Abstract Meaning Representation (AMR) helps pretrained language models better generalize in NLI. Our experiments integrating AMR into NLI in both fine-tuning and prompting settings show that the presence of AMR in fine-tuning hinders model generalization while prompting with AMR leads to slight gains in GPT-4o.However, an ablation study reveals that the improvement comes from amplifying surface-level differences rather than aiding semantic reasoning. This amplification can mislead models to predict non-entailment even when the core meaning is preserved."
-}
-
-@misc{markle2025generating,
-      title={Generating Text from Uniform Meaning Representation}, 
-      author={Emma Markle and Reihaneh Iranmanesh and Shira Wein},
-      year={2025},
-      eprint={2502.11973},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.11973}, 
 }
 
 @inproceedings{hoang-etal-2025-role,
