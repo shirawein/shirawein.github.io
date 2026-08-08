@@ -32,14 +32,50 @@
     abstract = "Translationese refers to the statistical patterns that distinguish translated texts from original texts, which are often subtle and imperceptible to human readers. When translated texts appear in either training or testing data, these patterns can negatively affect model performance or warp model evaluation. We approach the task of discerning whether a text was originally written in English or translated into English by fine-tuning contemporary foundation models at distinct item lengths and achieve state-of-the-art performance (94{\%} Macro F1). Given that these linguistic cues are subtle and often imperceptible to humans, we analyze the features which enable our model{'}s high performance. Employing a suite of interpretability-based techniques, we find that: (1) our high accuracy is enabled by a collection of linguistic features, a number of which correspond with linguistic theories of translationese, and (2) pretrained neural models are adept at picking up these features without any fine-tuning."
 }
 
-@misc{markle2025setupsentencelevelenglishtouniformmeaning,
-      title={SETUP: Sentence-level English-To-Uniform Meaning Representation Parser}, 
-      author={Emma Markle and Javier Gutierrez Bach and Shira Wein},
-      year={2025},
-      eprint={2512.07068},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2512.07068}, 
+@inproceedings{yang-wein-2026-trainmr,
+    title = "{T}r{A}in{MR}: an Annotator Training Website for {A}bstract {M}eaning {R}epresentation",
+    author = "Yang, Mina  and
+      Wein, Shira",
+    booktitle = "Proceedings of The Seventh International Workshop on Designing Meaning Representations ({DMR} 2026) @ {LREC} 2026",
+    month = may,
+    year = "2026",
+    address = "Palma, Mallorca (Spain)",
+    publisher = "ELRA Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/2026.dmr-1.4/",
+    doi = "10.63317/2nzfbbesoii2",
+    pages = "44--53",
+    abstract = "Abstract Meaning Representation (AMR) is a graph-based semantic representation which captures the core elements of meaning of a text. AMR has been incorporated into a variety of downstream tasks, which rely heavily on the availability of gold-annotated AMR corpora. While the annotation process is fairly lightweight, annotator training is still required even for linguists due to the extensive nature of the annotation guidelines and comprehensive set of roles. Therefore, all corpus development projects for AMR (and extensions of AMR) require the dataset curators to first train annotators. In this paper, we develop an online AMR annotation training system called TrAinMR in order to ease this training process and thus motivate the development of additional AMR corpora. The two main components of TrAinMR are (1) a written tutorial covering the basics of AMR annotation, and (2) an interactive practice module with corrective feedback. To measure the effectiveness of this tool, we conduct two pilot studies with five human annotators each. We find that the majority of annotators state their understanding of AMR improved as a result of TrAinMR, and some annotators show a positive trend in SMATCH scores after completing the practice module."
+}
+
+@inproceedings{delgado-wein-2026-semantic,
+    title = "Where in Semantic Space Do {S}panish Neologisms Emerge?",
+    author = "Delgado, Bianca  and
+      Wein, Shira",
+    booktitle = "Proceedings of the Workshop Neology and Large Language Models",
+    month = may,
+    year = "2026",
+    address = "Palma, Mallorca (Spain)",
+    publisher = "ELRA Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/2026.neollm-1.5/",
+    doi = "10.63317/226wjbxcrmpm",
+    pages = "47--52",
+    abstract = "English neologisms, or newly coined words, have previously been shown to emerge in sparser semantic neighborhoods (filling semantic gaps) and near other neologisms (in growing semantic areas). In this work, we investigate where in semantic space Spanish neologisms emerge, and whether this mirrors English neologism development. We find that Spanish neologisms, in comparison to non-neologisms, do indeed appear both nearer to other neologisms and further from non-neologisms. We additionally investigate the prevalence of loanwords from other languages through time in Spanish neologism production and manually assess the topics that appear as loanwords at four years: 1810, 1900, 1950, and 1990. Our findings show that on average, the Spanish neologisms in our dataset have fewer neighboring words in semantic space compared to non-neologisms and tend to cluster more tightly in the semantic space, indicating that patterns of neologism emergence span languages. This suggests that novel methods for neologism detection may be cross-lingually applicable, with these features serving as multilingual predictors of neologism emergence."
+}
+
+@inproceedings{markle-etal-2026-setup,
+    title = "{SETUP}: Sentence-level {E}nglish-To-Uniform Meaning Representation Parser",
+    author = "Markle, Emma  and
+      Gutierrez Bach, Javier  and
+      Wein, Shira",
+    booktitle = "Proceedings of the Fifteenth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2026",
+    address = "Palma de Mallorca, Spain",
+    publisher = "ELRA Language Resource Association",
+    url = "https://aclanthology.org/2026.lrec-1.762/",
+    doi = "10.63317/3mhzy8cuhkaw",
+    pages = "9710--9721",
+    abstract = "Uniform Meaning Representation (UMR) is a novel graph-based semantic representation which captures the core meaning of a text, with flexibility incorporated into the annotation schema such that the breadth of the world{'}s languages can be annotated (including low-resource languages). While UMR shows promise in enabling language documentation, improving low-resource language technologies, and adding interpretability, the downstream applications of UMR can only be fully explored when text-to-UMR parsers enable the automatic large-scale production of accurate UMR graphs at test time. Prior work on text-to-UMR parsing is limited to date. In this paper, we introduce two methods for English text-to-UMR parsing, one of which fine-tunes existing parsers for Abstract Meaning Representation and the other, which leverages a converter from Universal Dependencies, using prior work as a baseline. Our best-performing model, which we call SETUP, achieves an AnCast score of 84 and a SMATCH++ score of 91, indicating substantial gains towards automatic UMR parsing."
 }
 
 @inproceedings{markle-etal-2025-generating,
