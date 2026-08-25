@@ -73,6 +73,14 @@
       transition: transform 0.35s ease, filter 0.35s ease;
     }
 
+   .current-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: none;
+      transition: transform 0.35s ease, filter 0.35s ease;
+    }
+
     .person:hover .person-photo img {
       transform: scale(1.04);
       filter: grayscale(0%);
@@ -174,56 +182,48 @@ While I was an Assistant Professor at Amherst, I started working with a number o
       <div class="team-grid">
 
          <a href="https://www.linkedin.com/in/ellie-yang-a32b42240/"" class="person">
-          <div class="person-photo">
+          <div class="current-photo">
             <img src="images/ellie.jpeg" alt="Ellie Yang">
           </div>
           <div class="person-name">Ellie Yang</div>
           <div class="person-role">Undergraduate Research Assistant (2025-)</div>
           <div class="person-role">Amherst College'27</div>
-          <div class="person-research">
-            NLP and Law
-          </div>
+          <div class="person-research">NLP and Law</div>
         </a>
 
           <a href="https://www.linkedin.com/in/jiyuan-ji/" class="person">
-          <div class="person-photo">
+          <div class="current-photo">
             <img src="images/jiyuan.jpeg" alt="Jiyuan Ji">
           </div>
           <div class="person-name">Jiyuan Ji</div>
           <div class="person-role">Undergraduate Research Assistant (2025-)</div>
           <div class="person-role">Amherst College'28</div>
-          <div class="person-research">
-            NLP and AI Safety
-          </div>
+          <div class="person-research">NLP and AI Safety</div>
         </a>
 
           <a href="https://www.linkedin.com/in/weixin-lin/" class="person">
-          <div class="person-photo">
+          <div class="current-photo">
             <img src="images/weixin.jpeg" alt="Weixin Lin">
           </div>
           <div class="person-name">Weixin Lin</div>
           <div class="person-role">Undergraduate Research Assistant (2026- )</div>
           <div class="person-role">Amherst College'28</div>
-          <div class="person-research">
-            NLP and Human-Robot Interaction
-          </div>
+          <div class="person-research">NLP and Human-Robot Interaction</div>
         </a>
 
         <a href="https://andrewtremante.com" class="person">
-          <div class="person-photo">
+          <div class="current-photo">
             <img src="images/andrew.png" alt="Andrew Tremante">
           </div>
           <div class="person-name">Andrew Tremante</div>
           <div class="person-role">Collaborating Research Assistant (2026- )</div>
           <div class="person-role">Data Scientist at IBM</div>
-          <div class="person-research">
-            Text-to-SQL and NLP
-          </div>
+          <div class="person-research">Text-to-SQL and NLP</div>
         </a>
 
 
          <a href="https://prakhar-agrawal.com" class="person">
-          <div class="person-photo">
+          <div class="current-photo">
             <img src="images/prakhar.png" alt="Prakhar Agrawal">
           </div>
           <div class="person-name">Prakhar Agrawal</div>
@@ -255,7 +255,7 @@ While I was an Assistant Professor at Amherst, I started working with a number o
           </div>
           <div class="person-name">Anna (Ania) Serbina</div>
           <div class="person-role">Undergraduate Research Assistant (2024-2025)</div>
-          <div class="person-role">Now: Ph.D. Computer Science, USC Information Sciences Institute</div>
+          <div class="person-research">Now: Ph.D. Computer Science, USC Information Sciences Institute</div>
         </a>
 
          <a href="https://www.linkedin.com/in/reihaneh-iranmanesh/" class="person">
@@ -264,7 +264,7 @@ While I was an Assistant Professor at Amherst, I started working with a number o
           </div>
           <div class="person-name">Reihaneh Iranmanesh</div>
           <div class="person-role">Undergraduate Research Assistant (2024)</div>
-          <div class="person-role">Now: Ph.D. Computer Science, Georgetown University</div>
+          <div class="person-research">Now: Ph.D. Computer Science, Georgetown University</div>
         </a>
 
          <a href="https://www.linkedin.com/in/emma-markle/" class="person">
@@ -273,7 +273,7 @@ While I was an Assistant Professor at Amherst, I started working with a number o
           </div>
           <div class="person-name">Emma Markle</div>
           <div class="person-role">Undergraduate Research Assistant (2024-2026)</div>
-          <div class="person-role">Now: Ph.D. Computer Science, Northeastern University</div>
+          <div class="person-research">Now: Ph.D. Computer Science, Northeastern University</div>
         </a>
 
           <a href="https://www.linkedin.com/in/javier-gutierrez-bach-6a20b2260/" class="person">
@@ -282,7 +282,7 @@ While I was an Assistant Professor at Amherst, I started working with a number o
           </div>
           <div class="person-name">Javier Gutierrez Bach</div>
           <div class="person-role">Undergraduate Research Assistant (2025)</div>
-          <div class="person-role">Now: M.S. Computer Science, New York University</div>
+          <div class="person-research">Now: M.S. Computer Science, New York University</div>
         </a>
 
          <a href="https://www.linkedin.com/in/biancadelgado27/" class="person">
@@ -291,7 +291,7 @@ While I was an Assistant Professor at Amherst, I started working with a number o
           </div>
           <div class="person-name">Bianca Delgado</div>
           <div class="person-role">Undergraduate Research Assistant (2025)</div>
-          <div class="person-role">Now: B.S. Computer Science and Mathematics, Amherst College</div>
+          <div class="person-research">Now: B.S. Computer Science and Mathematics, Amherst College</div>
         </a>
 
           <a href="https://www.linkedin.com/in/thoangta/" class="person">
@@ -300,7 +300,7 @@ While I was an Assistant Professor at Amherst, I started working with a number o
           </div>
           <div class="person-name">Thu Hoang</div>
           <div class="person-role">Undergraduate Research Assistant (2025-2026)</div>
-          <div class="person-role">Now: B.S. Computer Science and Mathematics, Amherst College</div>
+          <div class="person-research">Now: B.S. Computer Science and Mathematics, Amherst College</div>
         </a>
          
          <a href="https://www.linkedin.com/in/tairanji/" class="person">
@@ -309,7 +309,7 @@ While I was an Assistant Professor at Amherst, I started working with a number o
           </div>
           <div class="person-name">Tairan (Ryan) Ji</div>
           <div class="person-role">Undergraduate Research Assistant (2025-2026)</div>
-          <div class="person-role">Now: Product Engineer, Eudia (Legal AI)</div>
+          <div class="person-research">Now: Product Engineer, Eudia (Legal AI)</div>
         </a>
 
          <a href="https://www.linkedin.com/in/nathanw0lf/" class="person">
@@ -318,7 +318,7 @@ While I was an Assistant Professor at Amherst, I started working with a number o
           </div>
           <div class="person-name">Nathan Wolf</div>
           <div class="person-role">Undergraduate Research Assistant (2025-2026)</div>
-          <div class="person-role">Now: M.S. Computer Science, Cornell Tech</div>
+          <div class="person-research">Now: M.S. Computer Science, Cornell Tech</div>
         </a>
 
 
