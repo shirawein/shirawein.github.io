@@ -1,3 +1,146 @@
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #222;
+      background: #fff;
+    }
+
+    .team-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    .section-header {
+      margin-bottom: 50px;
+    }
+
+    .section-header h1 {
+      font-size: 42px;
+      margin: 0 0 12px;
+      font-weight: 600;
+    }
+
+    .section-header p {
+      max-width: 650px;
+      color: #666;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .team-group {
+      margin-bottom: 70px;
+    }
+
+    .team-group h2 {
+      font-size: 24px;
+      margin-bottom: 28px;
+      font-weight: 500;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 12px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px 24px;
+    }
+
+    .person {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .person-photo {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background: #eee;
+      margin-bottom: 16px;
+    }
+
+    .person-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: transform 0.35s ease, filter 0.35s ease;
+    }
+
+    .person:hover .person-photo img {
+      transform: scale(1.04);
+      filter: grayscale(0%);
+    }
+
+    .person-name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .person-role {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 7px;
+    }
+
+    .person-research {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .person-links {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .person-links a {
+      color: #555;
+      text-decoration: underline;
+      margin-right: 10px;
+    }
+
+    .person-links a:hover {
+      color: #000;
+    }
+
+    /* Tablet */
+    @media (max-width: 900px) {
+      .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 650px) {
+      .team-section {
+        padding: 50px 20px;
+      }
+
+      .section-header h1 {
+        font-size: 32px;
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 16px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
 <center><img src="compass.jpeg" alt="compass research lab logo" width="350"></center>
 <h3>Research Lab</h3>
 <p style="font-size:15px;">
@@ -28,35 +171,164 @@ I am also happy to work with undergraduates and Master's students at USF.
 
 <hr style="background-color: black; height: 1px;">
 
-<h3>Current Members</h3>
+<!-- Research Assistants -->
+    <section class="team-group">
+      <h2>Research Assistants</h2>
+
+      <div class="team-grid">
+
+        <a href="#" class="person">
+          <div class="person-photo">
+            <img src="images/student1.jpg" alt="Student Name">
+          </div>
+
+          <div class="person-name">Student Name</div>
+          <div class="person-role">Research Assistant</div>
+          <div class="person-research">
+            Computer vision and deep learning
+          </div>
+
+          <div class="person-links">
+            <span>GitHub</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="person">
+          <div class="person-photo">
+            <img src="images/student2.jpg" alt="Student Name">
+          </div>
+
+          <div class="person-name">Student Name</div>
+          <div class="person-role">Research Assistant</div>
+          <div class="person-research">
+            Natural language processing
+          </div>
+
+          <div class="person-links">
+            <span>Website</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+<h3>Undergraduate Research Assistants</h3>
 While I was an Assistant Professor at Amherst, I started working with a number of undergraduate students, including these current members of my lab:
 <p style="font-size:15px;">
-<ul>
- <li class='item'><p style="font-size:15px;"> Nathan Wolf, UMass Amherst'26 (2025 - )</p></li>
- <li class='item'><p style="font-size:15px;"> Ellie Yang, Amherst College'27 (2025 - )</p></li>
- <li class='item'><p style="font-size:15px;"> Thu Hoang, Amherst College'28 (2025 -)</p></li>
- <li class='item'><p style="font-size:15px;"> Jiyuan Ji, Amherst College'28 (2025 - )</p></li>
- <li class='item'><p style="font-size:15px;"> Weixin Lin, Amherst College'28 (2026 - )</p></li>
-</ul> 
+  <section class="team-group">
+      <div class="team-grid">
+
+         <a href="#" class="person">
+          <div class="person-photo">
+            <img src="ellie.jpeg" alt="Ellie Yang">
+          </div>
+
+          <div class="person-name">Ellie Yang (2025-)</div>
+          <div class="person-role">Undergraduate Research Assistant</div>
+          <div class="person-role">Amherst College'27</div>
+          <div class="person-research">
+            NLP and Law
+          </div>
+
+          <div class="person-links">
+            <a href="https://www.linkedin.com/in/ellie-yang-a32b42240/">LinkedIn</a><span>
+          </div>
+        </a>
+
+          <a href="#" class="person">
+          <div class="person-photo">
+            <img src="jiyuan.jpeg" alt="Jiyuan Ji">
+          </div>
+
+          <div class="person-name">Jiyuan Ji (2025-)</div>
+          <div class="person-role">Undergraduate Research Assistant</div>
+          <div class="person-role">Amherst College'28</div>
+          <div class="person-research">
+            NLP and AI Safety
+          </div>
+
+          <div class="person-links">
+            <a href="https://www.linkedin.com/in/jiyuan-ji/">LinkedIn</a><span>
+          </div>
+        </a>
+
+                <a href="#" class="person">
+          <div class="person-photo">
+            <img src="weixin.jpeg" alt="Weixin Lin">
+          </div>
+
+          <div class="person-name">Weixin Lin (2026-)</div>
+          <div class="person-role">Undergraduate Research Assistant</div>
+          <div class="person-role">Amherst College'28</div>
+          <div class="person-research">
+            NLP and Human-Robot Interaction
+          </div>
+
+          <div class="person-links">
+            <a href="https://www.linkedin.com/in/weixin-lin/">LinkedIn</a><span>
+          </div>
+        </a>
+
+        <a href="#" class="person">
+          <div class="person-photo">
+            <img src="andrew.jpg" alt="Andrew Tremante">
+          </div>
+
+          <div class="person-name">Andrew Tremante</div>
+          <div class="person-role">Collaborating Research Assistant (2026- )</div>
+          <div class="person-role">Data Scientist at IBM</div>
+          <div class="person-research">
+            Text-to-SQL and NLP
+          </div>
+
+          <div class="person-links">
+            <a href="https://andrewtremante.com">Website</a><span>
+          </div>
+        </a>
+
+
+         <a href="#" class="person">
+          <div class="person-photo">
+            <img src="prakhar.png" alt="Prakhar Agrawal">
+          </div>
+
+          <div class="person-name">Prakhar Agrawal</div>
+          <div class="person-role">Undergraduate Research Assistant (2026- )</div>
+          <div class="person-role">Amherst College'27</div>
+          <div class="person-research">
+            Software Engineering and Financial Systems
+          </div>
+
+          <div class="person-links">
+            <a href="hhttps://prakhar-agrawal.com">Website</a><span>
+          </div>
+        </a>
+
+
+      </div>
+    </section>
 
 
 <hr style="background-color: black; height: 1px;">
 
 <h3>Former Members</h3>
-  I am grateful to have worked with many exceptional students, including but not limited to these former long-term members of my lab at Amherst:
+  I am grateful to have worked with many exceptional students, including (but not limited to) these former members of my lab at Amherst:
 <p style="font-size:15px;">
 <ul>
-<li class='item'><p style="font-size:15px;"> Anna Serbina, Amherst College'25 (2024 - 2025) → Ph.D. Computer Science, USC Information Sciences Institute</p></li>	
+<li class='item'><p style="font-size:15px;"> Anna Serbina, Amherst College'25 (2024-2025) → Ph.D. Computer Science, USC Information Sciences Institute</p></li>	
  <li class='item'><p style="font-size:15px;"> Reihaneh Iranmanesh, Amherst College'25 (2024) → Ph.D. Computer Science, Georgetown University</p></li>
  <!-- <li class='item'><p style="font-size:15px;"> Jason DeGraaff, Amherst College'25 (2024) → Computer Science Teacher, Proof School</p></li> -->
  <li class='item'><p style="font-size:15px;"> Emma Markle, Amherst College'26 (2024-2026) → Ph.D. Computer Science, Northeastern University</p></li>
  <li class='item'><p style="font-size:15px;"> Ryan Ji, Amherst College'26 (2025-2026) → Product Engineer, Eudia (Legal AI)</p></li>
+ <li class='item'><p style="font-size:15px;"> Nathan Wolf, UMass Amherst'26 (2025-2026) → M.S. Computer Science, Cornell Tech</p></li>
  <!-- <li class='item'><p style="font-size:15px;"> Ryan Hughes, Amherst College'26 (2025) → Music Teacher, Amherst College</p></li> -->
  <!-- <li class='item'><p style="font-size:15px;"> Skyler McDonnell, Amherst College'26 (2025)</p></li> -->
  <li class='item'><p style="font-size:15px;"> Javier Gutierrez Bach, Amherst College'26 (2025)</p></li>
  <!-- <li class='item'><p style="font-size:15px;"> Rocky Klopfenstein, Amherst College'27 (2025)</p></li> -->
  <li class='item'><p style="font-size:15px;"> Mina Yang, Amherst College'27 (2025)</p></li>
- <!-- <li class='item'><p style="font-size:15px;"> Bianca Delgado, Amherst College'27 (2025)</p></li> -->
+ <li class='item'><p style="font-size:15px;"> Bianca Delgado, Amherst College'27 (2025)</p></li>
+ <li class='item'><p style="font-size:15px;"> Thu Hoang, Amherst College'28 (2025-2026)</p></li>
  <!-- <li class='item'><p style="font-size:15px;"> Yichen Liu, Amherst College'28 (2025)</p></li> -->
 </ul> 
 <!-- <br/>
