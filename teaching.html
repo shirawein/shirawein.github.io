@@ -1,4 +1,578 @@
-<h3>Amherst College</h3></br>
+    <style>
+        /* =========================================================
+           Base
+           ========================================================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .teaching-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1rem 0 4rem;
+        }
+
+        /* =========================================================
+           Header
+           ========================================================= */
+
+        .teaching-areas span:not(:last-child)::after {
+            content: " · ";
+            color: #bbb;
+        }
+
+        /* =========================================================
+           Sections
+           ========================================================= */
+
+        .teaching-section {
+            margin-top: 3.5rem;
+        }
+
+        /* =========================================================
+           Teaching philosophy
+           ========================================================= */
+
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        /* =========================================================
+           Courses
+           ========================================================= */
+
+        .course {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 2rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .course:first-child {
+            padding-top: 0;
+        }
+
+        .course-meta {
+            color: #777;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .course-meta strong {
+            display: block;
+            color: #444;
+            font-weight: 600;
+        }
+
+        .course h3 {
+            margin: 0 0 0.5rem;
+            color: #333;
+            font-size: 1.15rem;
+            font-weight: 500;
+        }
+
+        .course p {
+            margin: 0;
+            color: #555;
+            font-size: 0.92rem;
+        }
+
+        .course-tags {
+            margin-top: 0.7rem;
+            color: #777;
+            font-size: 0.78rem;
+        }
+
+        .course-tags span:not(:last-child)::after {
+            content: " · ";
+            color: #bbb;
+        }
+
+        /* =========================================================
+           Highlights
+           ========================================================= */
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3rem;
+            row-gap: 2rem;
+        }
+
+        .highlight h3 {
+            margin: 0 0 0.35rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .highlight p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* =========================================================
+           Recognition
+           ========================================================= */
+
+        .awards {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+
+        /* =========================================================
+           Previous teaching
+           ========================================================= */
+
+        .institution {
+            margin-bottom: 2.5rem;
+        }
+
+        .institution-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .institution-header h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .institution-years {
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        .previous-course {
+            padding: 0.9rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .previous-course h4 {
+            margin: 0;
+            font-size: 0.98rem;
+            font-weight: 500;
+            color: #444;
+        }
+
+        .previous-role {
+            margin: 0.15rem 0 0.4rem;
+            color: #777;
+            font-size: 0.8rem;
+        }
+
+        .previous-course p:last-child {
+            margin: 0;
+            color: #666;
+            font-size: 0.88rem;
+        }
+
+        /* =========================================================
+           Mobile
+           ========================================================= */
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 0.75rem;
+            }
+
+            .teaching-page {
+                padding-top: 0.5rem;
+            }
+
+            .teaching-header h1 {
+                font-size: 2rem;
+            }
+
+            .principles,
+            .highlights {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .course {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+
+            .institution-header {
+                display: block;
+            }
+
+            .institution-years {
+                display: block;
+                margin-top: 0.15rem;
+            }
+
+            .award {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="teaching-page">
+
+    <!-- =====================================================
+         Header
+         ===================================================== -->
+
+    <header class="teaching-header">
+
+        <h1>Teaching</h1>
+
+        <p class="teaching-intro">
+            In my teaching, I implement a student-centered approach which leverages active learning. I value in-class time as an opportunity not only to lecture but also to facilitate shared learning among students and direct communication between students and myself. I design in-class activities for multiple settings: small group discussions, individual written work, students orally presenting their solutions to the class, and students engaging with poll-based assessments. </p>
+
+            <br/>
+
+            <p class="teaching-intro">Success in teaching to me is when students from disparate backgrounds and levels of computational experience indicate that my course has enabled them to continue pursuing or using computer science—both by effectively equipping students with the necessary tools to succeed in future computer science work as well as by elevating their confidence to keep going. 
+        </p>
+
+
+    </header>
+
+
+    <section class="teaching-section">
+
+        <h2>How I Teach</h2>
+
+        <div class="principles">
+
+            <div class="principle">
+                <h3>Learning by Doing</h3>
+                <p>
+                    Students regularly practice concepts both inside and oustide of the classroom, through programming assignments,
+                    effective code design, and error analysis.
+                </p>
+            </div>
+
+            <div class="principle">
+                <h3>Integrating Research-Based Learning</h3>
+                <p>
+                    I designed research-based activities to enhance student learning at the undergraduate level and the graduate level, bringing in contemporary NLP research and advanced computing questions into the classroom.
+                </p>
+            </div>
+
+            <div class="principle">
+                <h3>Collaborative Learning</h3>
+                <p>
+                   Computing doesn't happen in isolation: programmers regularly code in existing large code-bases, and develop code which others will use. I use collaborative learning as a way to ensure students learn to leverage others' voices and work as a team.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         Amherst courses
+         ===================================================== -->
+
+    <section class="teaching-section">
+
+        <h2>Courses at Amherst College</h2>
+
+        <div class="course">
+
+            <div class="course-meta">
+                <strong>Spring 2026</strong>
+                Instructor of Record
+            </div>
+
+            <div>
+                <h3>
+                    Research Seminar: Multilingual Natural Language Processing
+                </h3>
+
+                <p>
+                    Developed an advanced research-based seminar on
+                    multilingual natural language processing, focused on
+                    synthesizing NLP research which elucidates how the
+                    complexity of the world's languages impacts NLP
+                    technologies.
+                </p>
+
+                <div class="course-tags">
+                    <span>NLP</span>
+                    <span>Research</span>
+                    <span>Undergraduate</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-meta">
+                <strong>Spring 2025</strong>
+                <strong>Fall 2025</strong>
+                Instructor of Record
+            </div>
+
+            <div>
+                <h3>Natural Language Processing</h3>
+
+                <p>
+                    Introduced a new elective on natural language processing,
+                    covering advanced state-of-the-art techniques and
+                    technologies, as well as linguistic and ethical knowledge.
+                    Developed the course plan, lecture content, and assignments.
+                </p>
+
+                <div class="course-tags">
+                    <span>NLP</span>
+                    <span>Linguistics</span>
+                    <span>Undergraduate</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-meta">
+                <strong>Fall 2024</strong>
+                <strong>Spring 2025</strong>
+                <strong>Fall 2025</strong>
+                <strong>Spring 2026</strong>
+                Instructor of Record
+            </div>
+
+            <div>
+                <h3>Introduction to Computer Science II</h3>
+
+                <p>
+                    Developed course materials and plan of instruction,
+                    led lab sessions, and taught all lectures for this
+                    second course in the introductory sequence, with a
+                    focus on object-oriented programming. Coordinated with
+                    a team of TAs and supported students outside of class
+                    during office hours.
+                </p>
+
+                <div class="course-tags">
+                    <span>Programming</span>
+                    <span>Object-Oriented Design</span>
+                    <span>Undergraduate</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-meta">
+                <strong>Fall 2024</strong>
+                Instructor of Record
+            </div>
+
+            <div>
+                <h3>Data Structures</h3>
+
+                <p>
+                    Developed all course materials and lecture content for
+                    this core course in the computer science major. Assisted
+                    students during office hours and provided ample
+                    opportunity for practice, both as peer learning
+                    opportunities in-class and as formative assessments.
+                </p>
+
+                <div class="course-tags">
+                    <span>Data Structures</span>
+                    <span>Algorithms</span>
+                    <span>Undergraduate</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="teaching-section">
+
+        <h2>Teaching Awards</h2>
+
+        <ul>
+
+            <li> 2024: AAAI/ACM SIGAI New and Future AI Educator Award</li>
+            <li> 2024: Georgetown Computer Science Outstanding Teaching Assistant Award</li>
+            <li> 2023: Georgetown All-Around Graduate Student Teaching Award</li>
+         </ul>
+
+    </section>
+
+    <section class="teaching-section">
+
+        <h2>Open Educational Resources</h2>
+
+        <ul>
+
+            <li> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35198">Lecture material and worksheets for AI Applications and Societal Impact - CS Core 2023.</a></li>
+            <li> <a href="https://sigai.acm.org/static/aimatters/10-4/AIMatters-10-4-02-Neumann.pdf">EAAI-24 Blue Sky Ideas in Artificial Intelligence Education from the AAAI/ACM SIGAI New and Future AI Educator Program.</a></li>
+            <li> <a href="https://dl.acm.org/doi/pdf/10.1145/3631987">A CS1 Open Data Analysis Project with Embedded Ethics.</a></li>
+
+         </ul>
+
+    </section>
+
+
+
+    <section class="teaching-section">
+
+        <h2>Previous Teaching</h2>
+
+
+        <div class="institution">
+
+            <div class="institution-header">
+                <h3>Georgetown University</h3>
+                <span class="institution-years">2021–2023</span>
+            </div>
+
+
+            <div class="previous-course">
+
+                <h4>Database Management Systems</h4>
+
+                <p class="previous-role">
+                    Head Teaching Assistant · Spring 2023, Fall 2023
+                </p>
+
+                <p>
+                    Managed course logistics and grading, gave guest lectures
+                    on SQL set operations, MySQL, and data structures, hired
+                    TAs, and trained them in inclusive pedagogy.
+                </p>
+
+            </div>
+
+
+            <div class="previous-course">
+
+                <h4>Intro to Computer Science: Python</h4>
+
+                <p class="previous-role">
+                    Instructor of Record · Fall 2022
+                </p>
+
+                <p>
+                    Sole instructor for an introductory course designed to
+                    give non-majors a foundational understanding of computer
+                    science and comprehensive ability to program in Python.
+                    Developed all course materials and managed four TAs.
+                </p>
+
+            </div>
+
+
+            <div class="previous-course">
+
+                <h4>Data Mining</h4>
+
+                <p class="previous-role">
+                    Teaching Assistant · Fall 2021
+                </p>
+
+                <p>
+                    Assisted with supervised and unsupervised algorithms,
+                    data preprocessing, and data mining models. Gave guest
+                    lectures on Python for data science and machine learning
+                    with Weka.
+                </p>
+
+            </div>
+
+
+            <div class="previous-course">
+
+                <h4>Empirical Methods in Natural Language Processing</h4>
+
+                <p class="previous-role">
+                    Teaching Assistant · Spring 2021
+                </p>
+
+                <p>
+                    Facilitated classroom activities, graded and developed
+                    assignments, held office hours, and gave a guest lecture
+                    on dependency parsing.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="institution">
+
+            <div class="institution-header">
+                <h3>Lafayette College</h3>
+                <span class="institution-years">2017–2018</span>
+            </div>
+
+
+            <div class="previous-course">
+
+                <h4>Data Structures and Algorithms</h4>
+
+                <p class="previous-role">
+                    Teaching Assistant · Spring 2018
+                </p>
+
+                <p>
+                    Taught the tenets of object-oriented programming and
+                    coordinated the approach to instruction.
+                </p>
+
+            </div>
+
+
+            <div class="previous-course">
+
+                <h4>Digital Media Computing</h4>
+
+                <p class="previous-role">
+                    Teaching Assistant · Spring 2017, Fall 2017
+                </p>
+
+                <p>
+                    Instructed students on data containers, algorithms,
+                    complexity analysis, recursion, unit testing, and
+                    experiment design.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- <h3>Amherst College</h3></br>
 
 <h4>Course: Research Seminar: Multilingual Natural Language Processing</h4>
   <ul>
@@ -96,22 +670,3 @@
     <li class='item'><p style="font-size:15px;"> Instructed on a variety of concepts, including: data containers, algorithms, complexity analysis, 
       recursion, unit testing, and experiment design.</p></li>
   </ul> </br>
-
-
-<!--   <hr style="background-color: black; height: 1px;">
-  <h3>Student Mentoring & Advising</h3></br>
-  <h4>Georgetown Undergraudate Research Assistant</h4>
-  <ul>
-    <li class='item'> Institution: Georgetown University</li>
-    <li class='item'> Time: Winter 2021</li>
-    <li class='item'> Mentored an Undergraduate Research Assistant, with whom I co-authored a paper. 
-      The student assisted in data management, corpus cleanup, and analysis.</li>
-  </ul> </br> -->
-<!-- 
-  RULE (Research-based Undergraduate Linguistic experience) Advisor on semester-long course project (Washington, DC)
-Paired with three Georgetown Linguistics undergraduate students who had registered for the RULE Ling-202 Course, advising as they contributed to a semester-long project on a project of my choosing
-August to December 2021 (Fall 2021) -->
-<!-- 
-Mentor on Lafayette College EXCEL Research Project to Visiting High School Student (Easton, PA)
-Mentored a visiting high school student through his involvement on the computational biology project I worked on through the Lafayette College EXCEL research program
-May to August 2016 (Summer 2016) -->
